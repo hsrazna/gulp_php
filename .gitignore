@@ -2,5 +2,6 @@
 /dist/
 /app/css/
 /app/js/scripts.js
+/app/js/scripts.min.js
 /**/*.psd
 /**/Thumbs.db

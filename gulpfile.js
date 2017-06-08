@@ -80,6 +80,8 @@ gulp.task('watch', ['sass', 'min-css', 'scripts', 'min-scripts', 'browser-sync']
 	gulp.watch(['libs/**/*.js', 'app/js/common.js', 'app/js/common2.js'], ['scripts']);
 	gulp.watch('app/*.html', browserSync.reload);
 	gulp.watch('app/**/*.php', browserSync.reload);
+	gulp.watch('app/css/main.css', ['min-css']);
+	gulp.watch('app/js/scripts.js', ['min-scripts']);
 });
 
 gulp.task('imagemin', function() {
